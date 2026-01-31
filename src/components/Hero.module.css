@@ -1,0 +1,41 @@
+.heroGrid  {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.role {
+  color: #ffb400;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heroText h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.primary {
+  background: #ffb400;
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid #333;
+}
