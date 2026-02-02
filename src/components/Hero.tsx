@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
 
         <div className={styles.heroImage}>
-          <img src="/src/assets/hero.png" alt="hero" />
+          <img src="/hero.png" alt="hero" />
         </div>
       </div>
     </section>
