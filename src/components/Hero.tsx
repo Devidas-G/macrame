@@ -2,8 +2,8 @@ import styles from "./Hero.module.css"
 
 export default function Hero() {
   return (
-    <section className={`section ${styles.heroSection}`}>
-      <div className={`container ${styles.heroGrid}`}>
+    <section className={styles.heroSection}>
+      <div className={styles.heroGrid}>
         <div className={styles.heroText}>
           <p className={styles.role}>UI/UX DESIGNER</p>
 

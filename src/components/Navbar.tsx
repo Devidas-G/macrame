@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css"
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div className={`${styles.navContent} container`}>
+      <div className={styles.navContent}>
         <h3>Devidas Gaikwad</h3>
         <div className={styles.navLinks}>
           <a href="#">About</a>
