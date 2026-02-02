@@ -1,5 +1,6 @@
 .navbar {
-  padding: 0px 0;
+  padding: 0 80px;
+  background: transparent;
 }
 
 .navContent {
@@ -8,8 +9,13 @@
   align-items: center;
 }
 
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
 .navLinks a {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   text-decoration: none;
   color: #1d1d1d;
   font-weight: 500;

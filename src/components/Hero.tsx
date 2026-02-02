@@ -2,12 +2,12 @@ import styles from "./Hero.module.css"
 
 export default function Hero() {
   return (
-    <section className="section">
+    <section className={`section ${styles.heroSection}`}>
       <div className={`container ${styles.heroGrid}`}>
         <div className={styles.heroText}>
           <p className={styles.role}>UI/UX DESIGNER</p>
 
-          <h1>Hello, my name is Madelyn Torff</h1>
+          <h1>Hello, my name is Devidas Gaikwad</h1>
 
           <p className={styles.desc}>
             Short text with details about you, what you do or your professional career.
@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div>
+        <div className={styles.heroImage}>
           <img src="/src/assets/hero.png" alt="hero" />
         </div>
       </div>

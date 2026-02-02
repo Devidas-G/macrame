@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0, 20px;
+  width: 100%;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -10,6 +8,21 @@
   outline: 1px solid red;
 } */
 
+/* reset default browser margins so pages aren't offset */
+body {
+  margin: 0;
+}
+
+/* hide scrollbar while keeping scroll functionality */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 
 body {
   background: #f9fbfd;
@@ -17,8 +30,10 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 0 0;
 }
+
+/* no automatic extra section padding here; handle spacing per-page if needed */
 
 .project-card {
   background: white;
