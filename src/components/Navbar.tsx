@@ -4,11 +4,13 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContent}>
-        <h3>Devidas Gaikwad</h3>
+        <div className={styles.homeLink}>
+          <h3><a href="#">Devidas Gaikwad</a></h3>
+        </div>
         <div className={styles.navLinks}>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contacts</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contacts">Contacts</a>
         </div>
       </div>
     </nav>
