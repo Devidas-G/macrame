@@ -7,7 +7,7 @@ export default function Footer() {
           <span>💼</span>
           <span>✉️</span>
         </div>
-        <p>Madelyn Torff 2021</p>
+        <p>Devidas Gaikwad 2026</p>
       </div>
     </footer>
   )
