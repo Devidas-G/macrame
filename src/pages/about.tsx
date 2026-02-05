@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import AboutGrid from "../components/aboutgrid"
+import AboutGrid from "../components/AboutGrid"
 import GetInTouch from "../components/GetInTouch"
 
 export default function About() {
