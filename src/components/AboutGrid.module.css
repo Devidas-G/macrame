@@ -1,0 +1,51 @@
+.aboutSection {
+  position: relative;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    align-items: center;
+    gap: 40px;
+    padding: 80px;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.aboutDesc {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.primary {
+    background: #ffb400;
+    color: black;
+}
+
+.aboutImage {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.aboutImage img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
