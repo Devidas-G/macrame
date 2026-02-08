@@ -4,38 +4,51 @@
   z-index: -10;
 }
 
-.heroGrid  {
+.heroGrid {
   display: grid;
   grid-template-columns: 1fr 0.6fr;
   align-items: center;
-  gap: 40px;
-  padding-left: 80px;
-  /* padding-right: 20px; */
-  height: 110vh;
+  gap: 20px;
 }
 
 .heroImage {
   display: flex;
-  justify-content: right;
-  /* align-items: flex-start; */
+  justify-self: end;
+  /* right */
   align-self: start;
+  /* top */
 }
 
+
 .heroImage img {
-  max-width: 600px;
+  width: 100%;
+  /* max-width: 600px; */
+  /* min-width: 0; */
   height: auto;
+  display: block;
 }
 
 .role {
   color: #ffb400;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: -20px;
+}
+
+.heroText {
+  justify-self: start;
+  /* left */
+  align-self: end;
+  /* bottom */
+  padding-left: 20px;
 }
 
 .heroText h1 {
   font-size: 42px;
   margin-bottom: 15px;
   line-height: 1.2;
+  text-align: left;
+
 }
 
 .desc {
@@ -63,85 +76,30 @@
   border: 2px solid #333;
 }
 
-@media (max-width: 1024px) {
-  .heroGrid {
-    grid-template-columns: 1fr 0.6fr;
-    padding-left: 40px;
-    height: 110vh;
-    gap: 30px;
-  }
-
-  .heroImage img {
-    max-width: 450px;
-  }
-
-  .heroText h1 {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .heroGrid {
     grid-template-columns: 1fr 1fr;
-    padding-left: 20px;
-    /* padding-right: 20px; */
-    height: auto;
-    min-height: 100vh;
-    gap: 30px;
-  }
-
-  /* .heroImage {
-    justify-content: right;
-    margin-top: 30px;
-  } */
-
-  .heroImage img {
-    max-width: 100%;
-    width: 100%;
-    /* max-height: 300px; */
-    object-fit: contain;
-  }
-
-  .heroText h1 {
-    font-size: 28px;
-  }
-
-  .role {
-    font-size: 12px;
-  }
-
-  .desc {
-    font-size: 14px;
+    height: 40vh;
   }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 700px) {
   .heroGrid {
-    padding-left: 15px;
-    /* padding-right: 15px; */
-    min-height: 80vh;
+    grid-template-columns: 1fr;
   }
 
-  .heroText h1 {
-    font-size: 24px;
-    margin-bottom: 12px;
+  .heroImage {
+    display: none;
   }
 
-  .role {
-    font-size: 11px;
-    margin-bottom: 8px;
-  }
+  .heroText {
+    /* position: relative;
+    z-index: -10; */
+    height: 100%;
 
-  .desc {
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    padding: 8px 16px;
-    font-size: 12px;
-    margin-right: 8px;
-    margin-bottom: 8px;
+    background-image: url('/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
