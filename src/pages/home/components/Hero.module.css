@@ -1,7 +1,7 @@
 .heroSection {
-  margin-top: -60px;
-  position: relative;
-  z-index: -10;
+  /* margin-top: -60px; */
+  /* position: relative;
+  z-index: -10; */
 }
 
 .heroGrid {
@@ -9,36 +9,40 @@
   grid-template-columns: 1fr 0.6fr;
   align-items: center;
   gap: 20px;
+  height: 80vh;
 }
 
 .heroImage {
+  height: 100%;
   display: flex;
   justify-self: end;
   /* right */
   align-self: start;
   /* top */
+  overflow: hidden;
 }
 
 
 .heroImage img {
   width: 100%;
-  /* max-width: 600px; */
-  /* min-width: 0; */
   height: auto;
+  object-fit: cover;
   display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .role {
-  color: #ffb400;
+  color: var(--color-primary);
   font-weight: 600;
   margin-top: 100px;
   margin-bottom: -20px;
 }
 
 .heroText {
-  justify-self: start;
+  justify-self: end;
   /* left */
-  align-self: end;
+  align-self: center;
   /* bottom */
   padding-left: 20px;
 }
@@ -48,11 +52,10 @@
   margin-bottom: 15px;
   line-height: 1.2;
   text-align: left;
-
 }
 
 .desc {
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 25px;
   line-height: 1.6;
 }
@@ -67,7 +70,7 @@
 }
 
 .primary {
-  background: #ffb400;
+  background: var(--color-primary-dark);
   color: white;
 }
 
@@ -96,8 +99,8 @@
     /* position: relative;
     z-index: -10; */
     height: 100%;
-
-    background-image: url('/hero.png');
+    color: var(--color-bg);
+    background-image: url('/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

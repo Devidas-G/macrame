@@ -1,0 +1,21 @@
+:root {
+  /* 🎨 Brand Colors */
+  --color-primary: #6a5cff;
+  --color-primary-dark: #5848e5;
+  --color-accent: #8f6bff;
+
+  /* 🧱 Neutrals */
+  --color-bg: #f6f8ff;
+  --color-surface: #ffffff;
+  --color-text: #1d1d1d;
+  --color-text-muted: #666;
+
+  /* ⚠️ States */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* ✨ Effects */
+  --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
+  --radius-lg: 20px;
+}
