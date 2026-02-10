@@ -5,10 +5,11 @@
   --color-accent: #8f6bff;
 
   /* 🧱 Neutrals */
-  --color-bg: #f6f8ff;
+  --color-bg: #ffffff;
   --color-surface: #ffffff;
   --color-text: #1d1d1d;
   --color-text-muted: #666;
+  --color-body-bg: #EEEBE5;
 
   /* ⚠️ States */
   --color-success: #22c55e;

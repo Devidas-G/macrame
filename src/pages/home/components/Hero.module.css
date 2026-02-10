@@ -105,4 +105,10 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .outline {
+    background: transparent;
+    border: 2px solid var(--color-bg);
+    color: var(--color-bg);
+  }
 }
