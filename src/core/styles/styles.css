@@ -1,0 +1,48 @@
+#root {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+/* reset default browser margins so pages aren't offset */
+body {
+  margin: 0;
+}
+
+/* hide scrollbar while keeping scroll functionality */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: var(--color-body-bg);
+  color: #1d1d1d;
+}
+
+.section {
+  padding: 0 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* no automatic extra section padding here; handle spacing per-page if needed */
+
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  color: #666;
+}

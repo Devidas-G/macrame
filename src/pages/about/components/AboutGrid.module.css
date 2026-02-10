@@ -18,7 +18,7 @@
 }
 
 .aboutDesc {
-    color: #666;
+    color: var(--color-text-muted);
     margin-bottom: 25px;
     line-height: 1.6;
 }
@@ -33,13 +33,13 @@
 }
 
 .primary {
-    background: #ffb400;
-    color: black;
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 
 .aboutImage {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -48,4 +48,11 @@
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
 }
