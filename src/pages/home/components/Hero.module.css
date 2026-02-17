@@ -1,15 +1,9 @@
-.heroSection {
-  /* margin-top: -60px; */
-  /* position: relative;
-  z-index: -10; */
-}
-
 .heroGrid {
   display: grid;
   grid-template-columns: 1fr 0.6fr;
   align-items: center;
   gap: 20px;
-  height: 80vh;
+  /* min-height: 80vh; */
 }
 
 .heroImage {
@@ -35,8 +29,8 @@
 .role {
   color: var(--color-primary);
   font-weight: 600;
-  margin-top: 100px;
-  margin-bottom: -20px;
+  /* margin-top: 100px; */
+  margin-bottom: 10px;
 }
 
 .heroText {
@@ -58,6 +52,11 @@
   color: var(--color-text-muted);
   margin-bottom: 25px;
   line-height: 1.6;
+}
+
+.btnGroup {
+  display: flex;
+  padding: 10px 0;
 }
 
 .btn {
@@ -87,6 +86,13 @@
 }
 
 @media (max-width: 700px) {
+  .heroSection {
+    background-image: url('/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   .heroGrid {
     grid-template-columns: 1fr;
   }
@@ -100,10 +106,6 @@
     z-index: -10; */
     height: 100%;
     color: var(--color-bg);
-    background-image: url('/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .outline {
